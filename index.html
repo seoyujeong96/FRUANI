@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRUANI</title>
+    <!--파비콘-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/main/favicon/favicon.png">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link href="css/slide_autoplay.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <!--mobile_css-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+    <!--기본js소스-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slider.min.js"></script>
+    <script src="js/jquery.mmenu.all.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/motion.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/heart.js"></script>
+    <!--main_script-->
+    <script src="js/main-script.js"></script>
+</head>
+
+<body>
+       <!--header_S-->
+       <div id="header_wrap">
+        <!--밑줄/배경색-->
+        <!--header_desktop_S-->
+        <div class="header_main_desktop">
+            <!--가운데/너비/flex-->
+            <!--header-left_S-->
+            <div class="header_left">
+                <!--flex/logo-->
+                <a href="index.html" id="headerLogo" class="headerLogo desktop" data-itemtype="logo">
+                    <h1><img class="site-logo" src="images/main/header/logo.png" alt="logo"></h1>
+                </a>
+            </div>
+            <!--header-left_E-->
+            <!--header-center_S-->
+            <div class="header_center">
+                <!--flex/menu-->
+                <div class="header_menulist" data-itemtype="header-menu">
+
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub/index-sub_brand.html">ABOUT US</a>
+                            <div class="submenu-list">
+                                <ul class="submenu">
+                                    <li><a href="sub/index-sub_brand.html">Brand</a></li>
+                                    <li><a href="sub/index-sub_brand.html">Character</a></li>
+                                    <li><a href="sub/index-sub_brand.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="sub/index-sub_shop.html">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="sub/index-sub_board.html">BOARD</a>
+                        </li>
+                        <li>
+                            <a href="sub/index-sub_wallpaper.html">WALLPAPER</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--header-center_E-->
+            <!--header-right_S-->
+            <div class="header_right">
+                <!--flex/icon-->
+                <div id="desktop-utill" class="header-desktop-utill">
+                    <div class="utill">
+                        <a class="searchbar" href="#header_wrap"><img src="images/main/header/search_icon.png"
+                                alt="search_icon"></a>
+                        <a class="loginbar" href="sub/index-sub_login.html"><img src="images/main/header/login_icon.png"
+                                alt="login_icon"></a>
+                        <a class="cartbar" href="sub/index-sub_login.html"><img src="images/main/header/cart_icon.png" alt="cart_icon"></a>
+                    </div>
+                    <!--search_input_box_S-->
+                    <div class="search-input-box">
+                        <div class="searchIcon" data-type="icon"></div>
+                        <form class="headerSearchBar" action="" onsubmit="return false;">
+                            <input type="search" onkeyup="require('v2/mall/util/common').goSearchResultPage(event)">
+                        </form>
+                    </div>
+                    <!--search_input_box_E-->
+                </div>
+            </div>
+            <!--header-right_E-->
+        </div>
+        <!--header_desktop_E-->
+
+        <div class="header_main_mobile">
+            <!--header_mobile_S-->
+            <div class="m_header_left">
+                <!--메뉴바-->
+                <nav id="menu">
+                    <ul id="main_menu" class="mobile_gnb">
+                        <li><a href="sub/index-sub_brand.html">ABOUT US</a>
+                            <ul class="snd_menu sub_menu">
+                                <li><a href="sub/index-sub_brand.html">Brand</a></li>
+                                <li><a href="sub/index-sub_brand.html">Character</a></li>
+                                <li><a href="sub/index-sub_brand.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub/index-sub_shop.html">SHOP</a>
+                        </li>
+                        <li><a href="sub/index-sub_board.html">BOARD</a>
+                        </li>
+                        <li><a href="sub/index-sub_wallpaper.html">WALL PAPER</a></li>
+                    </ul>
+                </nav>
+                <div class="menubar">
+                    <a href="#menu"><img src="images/main/header/m_menubar.png" alt="m_menubar"></a>
+                </div>
+            </div>
+            <div class="m_header_center">
+                <div class="m_logo">
+                    <a href="index.html"><img src="images/main/header/m_logo.png" alt="m_logo"></a>
+                </div>
+            </div>
+            <div class="m_utill">
+                <div class="m_cart">
+                    <a href="sub/index-sub_login.html"><img src="images/main/header/cart_icon.png" alt="cart"></a>
+                </div>
+            </div>
+        </div>
+        <!--header_mobile_E-->
+    </div>
+    <!--header_E-->
+    
+    <div id="banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper" style="max-width:100%;">
+                <div class="swiper-slide"><a href="#header_wrap"><img src="images/main/banner/main/web/banner1.png" alt="배너1"></a>
+                </div>
+                <div class="swiper-slide"><a href="sub/index-sub_shop.html"><img src="images/main/banner/main/web/banner2.png" alt="배너2"></a>
+                </div>
+                <div class="swiper-slide"><a href="sub/index-sub_shop.html"><img src="images/main/banner/main/web/banner3.png" alt="배너3"></a>
+                </div>
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: {
+                    delay: 2500,//슬라이드 넘어가는 시간
+                    disableOnInteraction: false,
+                },
+                loop: true,//슬라이드 무한반복
+                navigation: {//화살표 버튼
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {//블릿 버튼
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+    </div>
+    <!--main_banner e-->
+    <!--maine_banner_S-->
+
+    <!--desktop-main-banner_E-->
+    <!--모바일 배너-->
+    <div class="m_banner_main">
+        <div class="mobile_banner">
+            <img src="images/main/banner/main/mobile/m_banner1.png" alt="mobile_banner">
+        </div>
+        <div class="tablet_banner">
+            <img src="images/main/banner/main/mobile/M_banner.png" alt="M_banner">
+        </div>
+    </div>
+    </div>
+    <!--main_banner_E-->
+
+    <!--main_section1_S-->
+    <div id="main_section1">
+        <div class="section1_title">
+            <div class="title_icon">
+                <img src="images/main/title_icon/title_icon.png" alt="title_icon">
+            </div>
+            <h2>BEST ITEMS</h2>
+            <p class="title_text">잘나가는 후르애니 제품을 만나봐요</p>
+        </div>
+        <div id="section1_object" class="shop_object1">
+            <ul class="section1_object1">
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section1/object_best1.png" alt="object_best1">
+                        <div class="object1-text">
+                            <strong>커피 마시는 토아 케이스</strong>
+                            <p class="price">25,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section1/object_best2.png" alt="object_best2">
+                        <div class="object1-text">
+                            <strong>비틀즈 후르애니 에코백</strong>
+                            <p class="price">7,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section1/object_best3.png" alt="object_best3">
+                        <div class="object1-text">
+                            <strong>메로집 책갈피</strong>
+                            <p class="price">4,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section1/object_best4.png" alt="object_best4">
+                        <div class="object1-text">
+                            <strong>후르애니 엄브렐라</strong>
+                            <p class="price">15,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+            </ul>
+            <div class="best-items-btn">
+                <a href="sub/index-sub_shop.html">바로가기</a>
+            </div>
+            <div class="section1_bg">
+                <img src="images/main/section1/base.png" alt="base">
+            </div>
+        </div>
+        
+    </div> <!--main_section1_E-->
+    <div id="main_section2">
+        <div class="section2_title">
+            <div class="title_icon">
+                <img src="images/main/title_icon/title_icon.png" alt="title_icon">
+            </div>
+            <h2>NEW</h2>
+            <p class="title_text">새로운 후르애니 제품을 만나봐요</p>
+        </div>
+        <div id="section2_object" class="shop_object1">
+            <ul class="section2_object2">
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section2/object_new1.png" alt="object_new1">
+                        <div class="object1-text">
+                            <strong>일하는 토아 떡매(100매)</strong>
+                            <p class="price">3,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section2/object_new2.png" alt="object_new2">
+                        <div class="object1-text">
+                            <strong>커피 떨꾼 레리 엽서카드</strong>
+                            <p class="price">1,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section2/object_new3.png" alt="object_new3">
+                        <div class="object1-text">
+                            <strong>후르애니 마스킹테이프</strong>
+                            <p class="price">3,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+                <li>
+                    <a href="sub/index-sub_shop.html">
+                        <img src="images/main/section2/object_new4.png" alt="object_new4">
+                        <div class="object1-text">
+                            <strong>후르애니_노트 3종(택1)</strong>
+                            <p class="price">2,000</p>
+                        </div>
+                    </a>
+                    <div class="placement">
+                        <div class="heart"></div>
+                      </div>
+                </li>
+            </ul>
+            <div class="best-items-btn">
+                <a href="sub/index-sub_shop.html">바로가기</a>
+            </div>
+        </div>
+    </div> <!--main_section1_E-->
+         <!--main_section3_S-->
+    <div id="main_section3">
+        <div class="main_content3">
+            <div class="main-title3">
+                <!--타이틀 제목3_S-->
+                <div class="title-icon">
+                    <img src="images/main/title_icon/title_icon.png" alt="title_icon">
+                </div>
+                <h2>BRAND</h2>
+                <p class="text3"><span>"후루애니 시티에 오신걸 환영합니다"
+                        <br>
+                        "다양한 캐릭터들과 함께 떠날 준비 되셨나요?"
+                        <p class="text3-1"><span>‘Fruits의 Fru’와 ‘Animal의 Ani’를 합친 뜻입니다.
+                                <br> 다양한 ‘과일+동물’들이 함께 여행을 떠나거나 여가를즐기는 모습,
+                                <br> 일상 생활 속의 모습을 일러스트 및 그래픽으로 제품을 디자인하는 브랜드입니다.</span></p>
+                    </span></p>
+            </div>
+            <!--타이틀 제목3_E-->
+            <!--character Tab_S-->
+            <div id="btn">
+                <!--position-->
+                <ul id="btn1">
+                    <!--btn_S//width/float:left-->
+                    <!--opacity로 클릭할때 변화주기-->
+                    <li class="tab01 tap tablink" onclick="openBoard(event,'Board01')">
+                        <a href="#btn"><img class="opacity" src="images/main/section3/web/btn_hover.png"
+                                alt="hover"></a>
+                    </li>
+                    <li class="tab02 tap tablink" onclick="openBoard(event,'Board02')">
+                        <a href="#btn"><img class="opacity" src="images/main/section3/web/btn_hover1.png"
+                                alt="hover1"></a>
+                    </li>
+                    <li class="tab03 tap tablink" onclick="openBoard(event,'Board03')">
+                        <a href="#btn"><img class="opacity" src="images/main/section3/web/btn_hover2.png"
+                                alt="hover2"></a>
+                    </li>
+                    <li class="tab04 tap tablink" onclick="openBoard(event,'Board04')">
+                        <a href="#btn"><img class="opacity" src="images/main/section3/web/btn_hover3.png"
+                                alt="hover3"></a>
+                    </li>
+                    <li class="tab05 tap tablink" onclick="openBoard(event,'Board05')">
+                        <a href="#btn"><img class="opacity" src="images/main/section3/web/btn_hover4.png"
+                                alt="hover4"></a>
+                    </li>
+                </ul>
+                <!--btn_E-->
+                <!--brand_text_S-->
+                <div id="brand_text" class="btn1_1 brand">
+                    <!--width/float:right-->
+                    <div id="full_brand_text" class="fbt">
+                        <div class="text01 box1_1 board" id="Board01">
+                            <a class="accordion" href="sub/index-sub_brand.html"><img src="images/main/section3/web/about_text.png"
+                                    alt="about_text"></a>
+                        </div>
+
+                        <div class="text02 box1_1 board" id="Board02" style="display:none;">
+                            <a class="accordion" href="sub/index-sub_brand.html"><img src="images/main/section3/web/about_text_mero.png"
+                                    alt="about_text"></a>
+                        </div>
+                        <div class="text03 box1_1 board" id="Board03" style="display:none;">
+                            <a class="accordion" href="sub/index-sub_brand.html"><img src="images/main/section3/web/about_text_toa.png"
+                                    alt="about_text"></a>
+                        </div>
+                        <div class="text04 box1_1 board" id="Board04" style="display:none;">
+                            <a class="accordion" href="sub/index-sub_brand.html"><img src="images/main/section3/web/about_text_reri.png"
+                                    alt="about_text"></a>
+                        </div>
+                        <div class="text05 box1_1 board" id="Board05" style="display:none;">
+                            <a class="accordion" href="sub/index-sub_brand.html"><img src="images/main/section3/web/about_text_dali.png"
+                                    alt="about_text"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--brand_text_E-->
+            </div>
+            <!--character Tab_E-->
+
+            <div id="mobile_brand">
+                <a href="sub/index-sub_brand.html"><img src="images/main/section3/mobile/m_main_brand.png" alt="m_main_brand"></a>
+            </div>
+            <div id="tablet_brand">
+                <a href="sub/index-sub_brand.html"><img src="images/main/section3/mobile/t_main_brand.png" alt="t_main_brand"></a>
+            </div>
+        </div>
+    </div>
+    <!--main_section3_E-->
+
+    <!--main_section4_S-->
+    <div id="main_section4">
+        <div class="main_content4">
+            <ul class="main_cupon">
+                <li><img src="images/main/section4/sale1.png" alt="sale1"></li>
+                <li><img src="images/main/section4/sale2.png" alt="sale2"></li>
+                <li><img src="images/main/section4/sale3.png" alt="sale3"></li>
+            </ul>
+        </div>
+    </div>
+    <!--main_section4_E-->
+
+    <!--main_middle_banner_S-->
+    <div id="main_middle_banner">
+        <!--heght-->
+        <div class="main_content_banner">
+            <!--가운데.너비-->
+            <div class="middle_banner_desktop">
+                <a href="sub/index-sub_event.html"><img src="images/main/banner/main/web/middle_banner2.png" alt="desktop">
+                </a>
+            </div>
+            <div class="m_middle_banner">
+                <a href="sub/index-sub_event.html"><img src="images/main/banner/main/mobile/m_banner3.png" alt="m_banner3">
+                </a>
+            </div>
+            <div class="tablet_middle_banner">
+                <a href="sub/index-sub_event.html"><img src="images/main/banner/main/mobile/tablet_middle_banner2.png"
+                        alt="tablet_middle_banner2">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--main_middle_banner_E-->
+     <!--main_section5_S-->
+     <div id="main_section5">
+        <div class="main-title3">
+            <!--타이틀 제목3_S-->
+            <div class="title-icon">
+                <img src="images/main/title_icon/title_icon.png" alt="title_icon">
+            </div>
+            <h2>WALLPAPER</h2>
+            <p class="text3"><span>배경화면 다운받으러 가볼까요?</span></p>
+            <p class="wallpaper_btn"><a href="sub/index-sub_wallpaper.html">WALLPAPER GO</a></p>
+        </div>
+        <!--타이틀 제목3_E-->
+
+        <div class="wallpaper_img">
+            <img src="images/main/section5/wallpaper_bg.png" alt="wallpaper_bg">
+        </div>
+    </div>
+    <!--main_section5_E-->
+    <!--main_middle_banner2_S-->
+    <div id="main_middle_banner2">
+        <!--영상되면 바꾸기..-->
+        <div class="jb-box">
+            <video muted="" preload="true" loop autoplay webkit-playsinline="webkit-playsinline" playsinline="playsinline">
+              <source src="media/banner_mp4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <style>
+            body { padding: 0px; margin: 0px; }
+            .jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
+            video {height: 100%;position: absolute;left: 50%;     margin-left: -960px;}
+            
+          </style>
+    </div>
+    <!--main_middle_banner2_E-->
+
+    
+
+    
+
+   
+    <!--main_section6_S-->
+    <div id="main_section6">
+        <div class="main_6bg">
+            <div class="main_content6">
+              
+                <div class="main-title6">
+                    <!--타이틀 제목6_S-->
+                    <div class="title-icon">
+                        <img src="images/main/title_icon/title_icon.png" alt="title_icon">
+                    </div>
+                    <h2>INSTAGRAM</h2>
+                </div>
+                <!--타이틀 제목6_E-->
+            </div>
+            <div class="bg_line_top">
+                <img src="images/sub/subpage_shop/shop-bgtop.png" alt="shop-bgtop">
+            </div>
+            <div class="insta_drawing">
+                <div class="drawing_left">
+                    <img src="images/main/section6/insta1.png" alt="insta1">
+                </div>
+
+                <div class="drawing_right">
+                    <img src="images/main/section6/insta2.png" alt="insta2">
+                </div>
+
+                <div class="going_photo">
+                    <div class="insta_img">
+                        <a href="https://www.instagram.com/fru_ani/" target="_blank"><img src="images/main/section6/insta_img.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg_line_bottom">
+                <img src="images/sub/subpage_shop/shop-bgbottom.png" alt="shop-bgbottom">
+            </div>
+        </div>
+    </div>
+    <!--main_section6_E-->
+
+    
+<!--footer_S-->
+<div id="footer_wrap">
+    <div class="footer">
+        <div class="footer_logo">
+            <a href="#footer_wrap"><img src="images/main/footer/footer_logo.png" alt="footer_logo"></a>
+        </div>
+        <div class="footer_text">
+            <p class="f_text">
+                상호: 후르애니 | 대표: 서유정 | 개인정보관리책임자: 서유정 |
+                <br> 전화: 070-1234-9876 | 이메일 : fruani.official@gmail.com
+                <br> 주소: 부산광역시 부산진구 부암동 960
+                <br> ©FRUANI. All rights reserved.
+            </p>
+        </div>
+        <div class="footer_icon">
+            <a href="https://www.instagram.com/fru_ani/" target="_blank"><img src="images/main/footer/insta_icon.png" alt="insta_icon"></a>
+            <a href="#"><img src="images/main/footer/e-mail_icon.png" alt="mail_icon"></a>
+        </div>
+    </div>
+</div>
+<!--footer_E-->
+<div id="fixed">
+    <div class="fixed_top">
+        <a href="#header_wrap"><img src="images/main/footer/fixed.png" alt="fixed"></a>
+    </div>
+</div>
+</body>
+
+</html>
