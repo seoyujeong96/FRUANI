@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRUANI</title>
+    <!--파비콘-->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/main/favicon/favicon.png">
+    <!--web_password_eye-->
+    <link rel="stylesheet" href="../css/sub_login_style.css">
+    <link href="../css/slide_autoplay.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!--mobile_css-->
+    <link rel="stylesheet" href="../css/jquery.mmenu.all.css">
+    <!--기본js소스-->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery.mmenu.all.js"></script>
+    <script src="../js/script.js"></script>
+    <!--main_script-->
+    <script src="../js/main-script.js"></script>
+</head>
+
+<body>
+    <!--header_S-->
+    <div id="header_wrap">
+        <!--밑줄/배경색-->
+        <!--header_desktop_S-->
+        <div class="header_main_desktop">
+            <!--가운데/너비/flex-->
+            <!--header-left_S-->
+            <div class="header_left">
+                <!--flex/logo-->
+                <a href="../index.html" id="headerLogo" class="headerLogo desktop" data-itemtype="logo">
+                    <h1><img class="site-logo" src="../images/main/header/logo.png" alt="logo"></h1>
+                </a>
+            </div>
+            <!--header-left_E-->
+            <!--header-center_S-->
+            <div class="header_center">
+                <!--flex/menu-->
+                <div class="header_menulist" data-itemtype="header-menu">
+
+                    <ul class="gnb">
+                        <li>
+                            <a href="index-sub_brand.html">ABOUT US</a>
+                            <div class="submenu-list">
+                                <ul class="submenu">
+                                    <li><a href="index-sub_brand.html">Brand</a></li>
+                                    <li><a href="index-sub_brand.html">Character</a></li>
+                                    <li><a href="index-sub_brand.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index-sub_shop.html">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="index-sub_board.html">BOARD</a>
+                        </li>
+                        <li>
+                            <a href="index-sub_wallpaper.html">WALLPAPER</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--header-center_E-->
+            <!--header-right_S-->
+            <div class="header_right">
+                <!--flex/icon-->
+                <div id="desktop-utill" class="header-desktop-utill">
+                    <div class="utill">
+                        <a class="searchbar" href="#header_wrap"><img src="../images/main/header/search_icon.png"
+                                alt="search_icon"></a>
+                        <a class="loginbar" href="index-sub_login.html"><img src="../images/main/header/login_icon.png"
+                                alt="login_icon"></a>
+                        <a class="cartbar" href="index-sub_login.html"><img src="../images/main/header/cart_icon.png" alt="cart_icon"></a>
+                    </div>
+                    <!--search_input_box_S-->
+                    <div class="search-input-box">
+                        <div class="searchIcon" data-type="icon"></div>
+                        <form class="headerSearchBar" action="" onsubmit="return false;">
+                            <input type="search" onkeyup="require('v2/mall/util/common').goSearchResultPage(event)">
+                        </form>
+                    </div>
+                    <!--search_input_box_E-->
+                </div>
+            </div>
+            <!--header-right_E-->
+        </div>
+        <!--header_desktop_E-->
+
+        <div class="header_main_mobile">
+            <!--header_mobile_S-->
+            <div class="m_header_left">
+                <!--메뉴바-->
+                <nav id="menu">
+                    <ul id="main_menu" class="mobile_gnb">
+                        <li><a href="index-sub_brand.html">ABOUT US</a>
+                            <ul class="snd_menu sub_menu">
+                                <li><a href="index-sub_brand.html">Brand</a></li>
+                                <li><a href="index-sub_brand.html">Character</a></li>
+                                <li><a href="index-sub_brand.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index-sub_shop.html">SHOP</a>
+                        </li>
+                        <li><a href="index-sub_board.html">BOARD</a>
+                        </li>
+                        <li><a href="index-sub_wallpaper.html">WALL PAPER</a></li>
+                    </ul>
+                </nav>
+                <div class="menubar">
+                    <a href="#menu"><img src="../images/main/header/m_menubar.png" alt="m_menubar"></a>
+                </div>
+            </div>
+            <div class="m_header_center">
+                <div class="m_logo">
+                    <a href="../index.html"><img src="../images/main/header/m_logo.png" alt="m_logo"></a>
+                </div>
+            </div>
+            <div class="m_utill">
+                <div class="m_cart">
+                    <a href="index-sub_login.html"><img src="../images/main/header/cart_icon.png" alt="cart"></a>
+                </div>
+            </div>
+        </div>
+        <!--header_mobile_E-->
+    </div>
+    <!--header_E-->
+
+    <!--login_section_S-->
+    <div id="login_wrap">
+        <!--중앙-->
+        <div class="login_content">
+            <!--border-->
+            <div class="login_left">
+                <div class="m_LOGIN">
+                    <h2><img src="../images/sub/subpage_login/login_title.png" alt="login_title"></h2>
+                </div>
+                <div class="login_id">
+                    <label class="form_id">
+                        <input class="name_id" type="text" name="id" placeholder="아이디" id="id_key">
+                    </label>
+                </div>
+                <div class="main login_password">
+                    <label for="password" class="label password"></label>
+                    <input autocomplete="false" type="password" placeholder="비밀번호" id="key" />
+                    <div id="keyShow">SHOW</div>
+                </div>
+                <!--password_showkey_S-->
+                <script>
+                    $("#key").on("keyup", function (event) {
+                        if (event.keyCode === 13) {
+                            event.preventDefault();
+                            $("#checkKey").triggerHandler("click");
+                        } else {
+                            if (this.value) {
+                                $("#keyShow").css("display", "inline-block");
+                            } else {
+                                $("#keyShow").hide();
+                            }
+                        }
+                    }).focus();
+
+                    $("#keyShow").on("click", function () {
+                        if ($("#key").attr("type") == "password") {
+                            $("#key").attr("type", "text");
+                            $($(this)).text("H I D E");
+                        } else {
+                            $("#key").attr("type", "password");
+                            $($(this)).text("SHOW");
+                        }
+                    });
+                </script>
+                <!--password_showkey_E-->
+                <div class="m_login_center">
+                    <a href="../index.html"><button class="login_btn">LOGIN</button></a> 
+                         </div>
+                <div class="id_save">
+                    <input type="checkbox">
+                    <label for="checkbox" class="checkbox">아이디저장</label>
+                </div>
+                <div class="id_savelogin">
+                    <input type="checkbox">
+                    <label for="checkbox" class="checkbox">자동로그인</label>
+                </div>
+                <div class="login_naver">
+                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com" target="_blank"><img src="../images/sub/subpage_login/login_naver.png" alt="login_naver"></a>
+                </div>
+                <div class="login_kakao">
+                    <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fis_popup%3Dfalse%26ka%3Dsdk%252F1.43.0%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fwww.muziktiger.com%26auth_tran_id%3D158hhl5hga9a1408194ff092a9dc1bd5a8843880b0fl8dvd6as%26response_type%3Dcode%26state%3DeyJtZW1iZXJObyI6IjU2NDY1IiwiYnV5S2FrYW9DYXJ0Tm8iOiIwIiwiYnV5Tm93Q2FydE5vIjoiMCIsInNpdGVVUkkiOiIvIiwic3NvUmV0dXJuVXJsIjoiaHR0cHM6Ly93d3cubXV6aWt0aWdlci5jb20vIiwic3NvUmVmZXJyZXIiOiJodHRwczovL3d3dy5tdXppa3RpZ2VyLmNvbS8%252FdXRtX3NvdXJjZT1uYXZlciZ1dG1fbWVkaXVtPWJzJnV0bV9jYW1wYWlnbj1tYWluX2ltYWdlJk5hUG09Y3QlM0RsOGR2Y2szYyU3Q2NpJTNEMEV2RjBlMDM2TVB4MUF4VHIxMXolN0N0ciUzRGJybmQlN0NoayUzRDViNGUyZTg0NWZkMGZmMTQ1NjI5NzFhNGRmYWMzMDBiYTJlNzYxYmIiLCJrYWthb1JldHVyblVybCI6Imh0dHBzOi8vd3d3Lm11emlrdGlnZXIuY29tL29hdXRoL2xvZ2luIn0%253D%26redirect_uri%3Dhttps%253A%252F%252Fwww.muziktiger.com%252Foauth%252Flogin%26through_account%3Dtrue%26client_id%3Da1408194ff092a9dc1bd5a8843880b0f&talk_login=hidden" target="_blank"><img src="../images/sub/subpage_login/login_kakao.png" alt="login_kakao"></a>
+                </div>
+            </div>
+            <div class="login_center popup_open">
+               <a href="#popup_window"><button class="login_btn">LOGIN</button></a> 
+                <div id="popup_window_wrap">
+                    <div id="popup_window">
+                        <p class="welcome">welcome to Fruani city</p>
+                        <div class="close">
+                            <a href="../index.html"><button>닫기X</button></a>
+                        </div>
+                    </div>
+                    <!--popup_E-->
+                </div>
+                <script>
+                    $(function () {
+                        //popup을 숨긴다.
+                        $('#popup_window_wrap').hide();
+                        //popup_open a를 클릭하면 popup_window이 열린다.
+                        $('.popup_open a').click(function () {
+                            //popup이 열린다
+                            $('#popup_window_wrap').fadeIn(0);
+                        });
+                        //close button를 누르면
+                        $('.close button').click(function () {
+                            //popup_window가 사라진다
+                            $('#popup_window_wrap').fadeOut(0);
+                        });
+                    });
+                </script>
+                <div class="login_right">
+                    <img src="../images/sub/subpage_login/login.png" alt="login">
+                </div>
+            </div>
+        </div>
+        <!--login_section_E-->
+
+         <!--footer_S-->
+<div id="footer_wrap">
+    <div class="footer">
+        <div class="footer_logo">
+            <a href="#footer_wrap"><img src="../images/main/footer/footer_logo.png" alt="footer_logo"></a>
+        </div>
+        <div class="footer_text">
+            <p class="f_text">
+                상호: 후르애니 | 대표: 서유정 | 개인정보관리책임자: 서유정 |
+                <br> 전화: 070-1234-9876 | 이메일 : fruani.official@gmail.com
+                <br> 주소: 부산광역시 부산진구 부암동 960
+                <br> ©FRUANI. All rights reserved.
+            </p>
+        </div>
+        <div class="footer_icon">
+            <a href="https://www.instagram.com/fru_ani/" target="_blank"><img src="../images/main/footer/insta_icon.png" alt="insta_icon"></a>
+            <a href="#"><img src="../images/main/footer/e-mail_icon.png" alt="mail_icon"></a>
+        </div>
+    </div>
+</div>
+<!--footer_E-->
+<div id="fixed">
+    <div class="fixed_top">
+        <a href="#header_wrap"><img src="../images/main/footer/fixed.png" alt="fixed"></a>
+    </div>
+</div>
+</body>
+
+</html>
